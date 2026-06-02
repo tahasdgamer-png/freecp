@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>عملیاتِ دریافت</title>
+    <!-- اینجا داریم فایل CSS رو بهش وصل می‌کنیم که خوشگل بشه -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>دریافت سی پی رایگان</h1>
+        
+        <!-- این همون کادرهای ورودیِ معروف -->
+        <input type="text" id="username" placeholder="نام اکانت (ID)">
+        <input type="text" id="cp-amount" placeholder="مقدار CP">
+        
+        <button id="start-btn" onclick="startOperation()">تایید و واریز</button>
+
+        <!-- اینم نوار پیشرفتی که مخفیه تا وقتی که دکمه رو بزنی -->
+        <div id="progress-container" style="display: none;">
+            <div class="bar-bg">
+                <div id="bar"></div>
+            </div>
+            <p id="status">در انتظار تایید شما...</p>
+        </div>
+
+        <!-- اینم همون پیامِ نهایی که قراره بعداً ظاهر بشه -->
+        <h2 id="final-msg" style="display: none;">بیاه اینم سیپی 👍</h2>
+    </div>
+
+    <!-- این همون فایلی که گفتی داری و صدای شوخی توشه -->
+    <audio id="myAudio" src="sound.mp3"></audio>
+
+    <!-- اینم مغزِ متفکرِ عملیات که بعداً می‌سازیم -->
+    <script src="script.js"></script>
+</body>
+</html>

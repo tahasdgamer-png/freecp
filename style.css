@@ -1,0 +1,72 @@
+/* تنظیمات کلی صفحه */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* کادر اصلی که همه چی توشه */
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* استایل کادرهای ورودی */
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+/* دکمه نارنجی جذاب */
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* استایل نوار پیشرفت (همون لودینگ) */
+.bar-bg {
+    background-color: #444;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50; /* سبز خوش‌رنگ */
+    transition: width 0.3s;
+}
+
+/* متن نهایی */
+#final-msg {
+    color: #4caf50;
+    margin-top: 20px;
+    font-size: 24px;
+}
